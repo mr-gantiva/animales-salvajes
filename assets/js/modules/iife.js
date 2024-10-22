@@ -2,7 +2,7 @@ export const datosAnimales = (() => {
   let matriz = [];
   async function obtenerDatos(nombre) {
     try {
-      let response = await fetch("/animales.json");
+      let response = await fetch("https://mr-gantiva.github.io/animales.json");
       let data = await response.json();
       console.log(data);
       const datosAnimal = data.animales.find((animal) => nombre == animal.name);
