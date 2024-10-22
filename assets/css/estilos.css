@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../imgs/fondo.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 100px;
+}
+
+/* Formulario */
+
+#preview {
+  height: 200px;
+  background-image: url(../imgs/lion.svg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Tabla de Participantes */
+
+#Animales {
+  height: 100%;
+  background: #f0f0f0;
+}
+
+#Animales div div {
+  transition: all 200ms;
+}
+
+#Animales div > div:hover {
+  box-shadow: 0px 1px 5px 1px;
+}
+
+.participante {
+  max-width: 30%;
+}
+
+/* Modal */
+
+.modal-dialog {
+  max-width: 85% !important;
+}
+
+.card-img-top {
+  width: 100%;
+  min-height: 250px;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+audio {
+  max-width: 250px;
+}
+
+.preview__card {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.previewImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.info__card {
+  position: relative;
+}
+
+.btnMostrar {
+  opacity: 0;
+  transition: all 0.25s ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.2px);
+  -webkit-backdrop-filter: blur(1.2px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  color: #fff;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
+}
+.btnMostrar:hover {
+  opacity: 1;
+  color: goldenrod;
+  background-color: #ededed;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.2px);
+  -webkit-backdrop-filter: blur(1.2px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
